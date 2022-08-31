@@ -171,13 +171,13 @@ A verificação de valores ou *Teste* de valores é onde realizamos comparaçõe
         as strings não são iguais
 
 - A comparação entre inteiros é feita por:
-    INTEGER1 -eq INTEGER2
-        os inteiros são iguais
-    INTEGER1 -ge INTEGER2
-        INTEGER1 é maior ou igual a INTEGER2
-    INTEGER1 -gt INTEGER2
-        INTEGER é maiorr que INTEGER2
-    INTEGER1 -le INTEGER2
-        INTEGER1 é menor ou igual a INTEGER2
-    INTEGER1 -lt INTEGER2
-        INTEGER1 é menor que INTEGER2
+    - INTEGER1 -eq INTEGER2
+        - os inteiros são iguais
+    - INTEGER1 -ge INTEGER2
+        - INTEGER1 é maior ou igual a INTEGER2
+    - INTEGER1 -gt INTEGER2
+        - INTEGER é maiorr que INTEGER2
+    - INTEGER1 -le INTEGER2
+        - INTEGER1 é menor ou igual a INTEGER2
+    - INTEGER1 -lt INTEGER2
+        - INTEGER1 é menor que INTEGER2
