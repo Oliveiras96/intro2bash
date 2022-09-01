@@ -181,3 +181,70 @@ A verificação de valores ou *Teste* de valores é onde realizamos comparaçõe
         - INTEGER1 é menor ou igual a INTEGER2
     - INTEGER1 -lt INTEGER2
         - INTEGER1 é menor que INTEGER2
+
+## For loop
+
+A sintaxe desse loop é a seguinte:
+
+```bash
+#!/bin/bash
+
+for variavel in 1 2 3 4
+do
+    #statement to be executed for every number
+done
+```
+
+o bloco de código dentro do loop é executado para cada um dos números na lista passada, nesse caso 1, 2, 3 e 4. A lista iterada no loop pode ser de numeros, caracteres e até mesmo de palavras.
+
+Outra forma de passar um conjunto de valores é usando o `range`. Nesse caso, especificamos o valor inicial e o final:
+
+```bash 
+#!/bin/bash 
+
+for variavel in {1..10}
+do
+    #satatements to be executed for every number
+done
+```
+
+## While loop
+
+Loops com while são executados enquanto uma condição for verdadeira. A sintaxe é a seguinte:
+
+```bash
+#!/bin/bash
+
+COUNTER=1
+
+while [[ COUNTER -lt 10 ]]
+do 
+    echo "Volta de numero ${COUNTER}"
+    ((COUNTER++)) #incrementa uma unidade no valor de COUNTER
+done
+```
+
+Esse loop é executado enquanto a condição `COUNTER -le 10` for verdadeira, ou seja, enquanto o valor da varável `COUNTER` for menor do que 10.
+
+## Expressões aritméticas
+
+Expressões no shell devem ser cercadas  por um cifrão e dois parênteses:
+```bash
+#!/bin/bash
+
+PRIMEIRO=4
+SEGUNDO=2
+
+#Expressao aritmetica
+echo "Adicao:"
+echo $((PRIMEIRO+SEGUNDO))
+
+echo "Subtracao:"
+echo $((PRIMEIRO-SEGUNDO))
+
+echo "Multiplicacao:"
+echo $((PRIMEIRO*SEGUNDO))
+
+echo "Divisao:"
+echo $((PRIMEIRO/SEGUNDO))
+```
